@@ -13,10 +13,6 @@
     color: var(--bright-blue-font-color);
 }
 
-.change:hover {
-    border-bottom: 2px var(--bright-blue-font-color);
-}
-
 .button {
     padding: 10px 40px;
     border-radius: 10px;
