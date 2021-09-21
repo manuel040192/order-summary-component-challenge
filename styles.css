@@ -1,0 +1,139 @@
+:root {
+    
+    /* FONT COLORS */
+    
+    --pale-blue-font-color: hsl(225, 100%, 94%);
+    --bright-blue-font-color: hsl(245, 75%, 52%);
+    --very-pale-blue-font-color: hsl(225, 100%, 98%);
+    --desaturated-blue-font-color: hsl(224, 23%, 55%);
+    --dark-blue-font-color: hsl(223, 47%, 23%);
+}
+
+.bright_blue_text {
+    color: var(--bright-blue-font-color);
+}
+
+.change:hover {
+    border-bottom: 2px var(--bright-blue-font-color);
+}
+
+.button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 3px 0;
+    color: #ffffff;
+    background-color: var(--bright-blue-font-color);
+    cursor: pointer;
+    margin-top: 20px;
+    width: 60%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.cancel {
+    margin-bottom: 28px;
+    color: var(--desaturated-blue-font-color);
+    font-size: 13px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 390px;   
+    max-height: 600px;
+    min-height: 380px;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    text-align: center;
+    color: var(--dark-blue-font-color);
+    font-size: 24px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.attribution {
+    display: none;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: #e0e8ff;
+    margin: 0;
+}
+
+.plan {
+    margin-top: 10px;
+}
+
+.container .plan__title {
+    grid: title;
+    color: var(--dark-blue-font-color);
+}
+
+.paragraph, .plan__value {
+    color: var(--desaturated-blue-font-color);
+}
+
+.paragraph {
+    font-size: 13px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.plan__title {
+    font-size: 13px;
+}
+
+.plan__value {
+    font-size: 13px;
+}
+
+.container .plan__image {
+    grid-area: img;
+}
+
+.container .plan__value {
+    grid-area: value;
+}
+
+.container .plan {
+    display: grid;
+    grid-template: "img title button" "img value button";
+    align-items: center;
+    height: 70px;
+    width: 70%;
+    background-color: #f5f7ff;
+    padding: 0 8px;
+    border-radius: 11px;
+}
+
+.plan__titleandvalue {
+    margin-top: 8px;
+}
+
+.card__image {
+    object-fit: cover;
+}
+
+.container .plan__button {
+    grid-area: button;
+    justify-self: end;
+    font-size: 12px;
+    align-items: center;
+}
